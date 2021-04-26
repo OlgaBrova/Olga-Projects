@@ -1,0 +1,45 @@
+.container-fluid {
+    background: url("/img/1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+    width: 100%;
+    height: 100vh;
+}
+
+.row {
+    padding-top: 300px;
+}
+
+.circleBtn {
+    width: 150px;
+    height: 150px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: rgb(241, 127, 146);
+    color: #641159;
+    font-size: 22px;
+    border: 1px solid crimson;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    transition: background 1s, transform 1s ease;
+}
+
+.circleBtn:hover {
+    background: crimson;
+    transform: rotate(360deg);
+}
+
+.circleBtn:active {
+    background:white;
+}
+
+#subHeading {
+    color: #641159;
+}
+
+
+

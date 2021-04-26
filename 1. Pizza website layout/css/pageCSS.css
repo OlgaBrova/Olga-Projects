@@ -1,0 +1,233 @@
+/* PIZZA CASA  CSS */
+
+.logo{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #f5edc3;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    cursor: pointer;
+    transition: background ease-in, transform 1.5s ease-in;
+}
+
+.logo:hover{
+    /* background: rgb(207, 89, 89); */
+    background: linear-gradient(green, white, red);
+    transform: rotate(360deg);
+}
+
+.logo img{
+    width: 170px;
+    position: absolute;
+}
+
+.nav{
+    margin-left: 400px;
+    margin-bottom: 50px;
+}
+
+.nav li a{
+    padding-right: 25px;
+}
+
+.nav li a:hover{
+    color: #3a3aff;
+}
+
+.nav img{
+    width: 100px;
+}
+
+.nav :nth-child(8){
+    margin-left: 60px;
+}
+
+.fa{
+    padding: 10px;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    position: relative;
+}
+
+.imgMain h2{
+    position: absolute;
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+    background: #1a2630;
+    opacity: 0.85;
+    padding: 15px 384px;
+    word-spacing: 9px;
+}
+
+.gallery h1{
+    font-style: italic;
+    color: #1a2630;
+    text-align: center;
+}
+
+.gallery p{
+    color: #1a2630;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.gallery h3{
+    font-weight: 400;
+    font-style: italic;
+    color: #1a2630;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.gallery{
+    background: #f5edc3;
+    padding: 80px;
+}
+
+.photo{
+   margin-bottom: 30px;
+}
+
+.gallery hr{
+    color: #1a2630;
+}
+
+.gallery img{
+    border: 2px solid  #f5edc3;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+.gallery img:hover{
+    transform: scale(2);
+}
+
+
+.menu{
+    font-style: oblique;
+    color:  #f5edc3;
+    padding: 80px;
+}
+
+.menu h3{
+    color: #20df69;
+    font-weight: 400;
+    font-style:oblique; 
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.menu h5{
+    color: #20df69;
+    font-weight: 300;
+}
+
+
+footer{
+    color: #1a2630;
+    font-style: italic;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 5px;
+}
+
+iframe{
+    border: 1px solid #1a2630;
+}
+
+.footer .map{
+    padding-right: 20px;
+    border-right: 1px solid #96989b;
+}
+
+.newsletter .fa{
+    color:  #1a2630;
+}
+
+.newsletter li{
+    list-style-type: none;
+}
+
+.newsletter button{
+    background: #1a2630;
+    border: 1px solid #1a2630;
+    height: 40px;
+    box-shadow: 3px 3px 3px #555353;
+
+}
+
+
+.placeOrder{
+    color: #1a2630;
+    font-style: italic;
+    padding: 50px;
+}
+
+.placeOrder{
+position: relative;
+}
+
+.placeOrder img{
+    width: 170px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+
+}
+
+.placeOrder h3{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.fieldset-2{
+    padding-bottom: 20px;
+}
+
+.fieldset-3 button{
+    background: #1a2630;
+    border: 1px solid #1a2630;
+    height: 40px;
+    box-shadow: 3px 3px 3px #555353;
+    float: right;
+}
+
+.fieldset-3 button:hover{
+
+    background: #315775;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

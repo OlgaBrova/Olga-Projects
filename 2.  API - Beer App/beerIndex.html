@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+        <title>Beer App</title>
+       
+    </head>
+
+    <body>
+    
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="beerBarBtn">Beer Bar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" id="allBeers" aria-current="page" href="#selectionBtn">Beers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="randomBeer" href="#result">Random Beer</a>
+                </li>
+              
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit" id="searchBtn" href="#mainNav" >Search</button>
+              </form>
+            </div>
+          </div>
+      </nav>
+
+      
+      <div class="container-fluid" style="background: #78843F; padding-top: 60px; padding-bottom: 300px;">
+
+        <div class="container px-0 text-white bg-dark "  style="display: block; box-shadow: 20px 20px 40px 20px  #0d1013;" id="mainContainer">
+          
+          <p class="fs-1 text-center fw-light text-warning">Welcome to the world of beer!</p>
+          <p class="fs-5 text-center fw-light">Here you can get all the information about beer!</p>
+        
+          <img src="img/beer1.jpg" class="img-fluid" style = "padding: 20px;" alt="...">
+        
+        </div>
+
+
+        <div class="container" id="selectionBtn" style=" padding: 10px; display: none;" >
+       
+          <div class="btn-group">
+            <select class="form-select btn-warning" id="pageSize">
+              <option selected>Page Size</option>
+              <option for="pageSize" value="8">show 8</option>
+              <option for="pageSize" value="16">show 16</option>
+              <option for="pageSize" value="28">show 28</option>
+            </select>
+          </div>
+          
+          <div class="btn-group col-md-10"></div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-warning dropdown-toggle center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sort by
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item"  href="#selectionBtn" id="sortByName">Name</a>
+              <a class="dropdown-item"  href="#selectionBtn" id="alcoholByVolume">Alcohol by volume</a>
+              <a class="dropdown-item"  href="#selectionBtn" id="firstBrewed">First Brewed</a>
+              <a class="dropdown-item" href="#selectionBtn" id="beerBitterness">Bitterness</a>
+            </div>
+          </div>
+          <br>
+          
+        </div>
+        
+
+        <div class="container" id="backBtnDiv" style=" padding: 10px; display: none;">
+          <button class="btn btn-warning"  id="backBtn" style="display: none;"> &laquo; Back to Beers</button>
+        </div>
+        
+
+        <div class="container bg-dark px-4 py-4"  id="result" style="box-shadow: 20px 20px 40px 20px  #0d1013; display: none;" >
+          
+        </div>
+
+
+        <div class="container" id="pageNavigation" style=" padding: 30px; display: none;" >
+          
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#" id="prev">&laquo; Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#" id="next">Next &raquo;</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        
+      </div>
+
+      
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+      <script src="./scripts/searchSelections.js"></script>
+
+      <script src="beerApp.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    </body>
+</html>
