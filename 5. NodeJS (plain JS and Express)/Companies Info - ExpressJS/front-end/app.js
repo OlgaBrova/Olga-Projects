@@ -51,8 +51,10 @@ posts.addEventListener("click", (event) => {
 posts.addEventListener("mouseup", (event) => {
 
     if (event.target.matches(".btn")) {
-        getPosts(); 
+        let id = event.target.id;
+        deleteUser(id);
     } 
+    getPosts(); 
 
 });
 
